@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # BALSHALA (Basic Flask Version)
 
 This is a **simplified Flask website** for BALSHALA — Gym Coach Powered by OJAS AI.
@@ -12,3 +13,7 @@ pip install -r requirements.txt
 python app.py
 ```
 Then open http://127.0.0.1:5000 in your browser.
+=======
+# BALSHALA_Basic_Flask
+Gym Coach Project using Flask and Python
+>>>>>>> 246fd98e4bce1db9edcf2e21b9e0875b52d06734
