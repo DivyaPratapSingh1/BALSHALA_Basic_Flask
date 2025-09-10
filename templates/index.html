@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><title>BALSHALA - Basic</title></head>
+<body>
+  <h1>BALSHALA - Gym Coach (Basic Flask)</h1>
+  <form action="/result" method="post">
+    <p>Age: <input type="number" name="age" required></p>
+    <p>Sex: <select name="sex"><option value="male">Male</option><option value="female">Female</option></select></p>
+    <p>Height (cm): <input type="number" name="height" step="0.1" required></p>
+    <p>Weight (kg): <input type="number" name="weight" step="0.1" required></p>
+    <p>Activity: <select name="activity"><option value="sedentary">Sedentary</option><option value="active">Active</option></select></p>
+    <p>Experience: <select name="experience"><option value="Beginner">Beginner</option><option value="Intermediate">Intermediate</option></select></p>
+    <p>Goal: <select name="goal"><option value="Fat Loss">Fat Loss</option><option value="Muscle Gain">Muscle Gain</option><option value="Maintenance">Maintenance</option></select></p>
+    <p>Days: <input type="number" name="days" min="2" max="6" value="3"></p>
+    <p>Diet: <select name="diet"><option value="veg">Vegetarian</option><option value="nonveg">Non-Vegetarian</option></select></p>
+    <p><button type="submit">Generate Plan</button></p>
+  </form>
+</body>
+</html>

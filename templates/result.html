@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head><title>BALSHALA - Result</title></head>
+<body>
+  <h1>Your BALSHALA Plan</h1>
+  <p><b>Age:</b> {{age}} | <b>Sex:</b> {{sex}} | <b>Height:</b> {{height}} cm | <b>Weight:</b> {{weight}} kg</p>
+  <p><b>BMI:</b> {{bmi_val}} | <b>TDEE:</b> {{tdee}} kcal | <b>Target Calories:</b> {{target_cals}} kcal</p>
+  <p><b>Macros:</b> Protein {{macros.protein_g}}g, Carbs {{macros.carb_g}}g, Fat {{macros.fat_g}}g</p>
+
+  <h2>Workout Plan ({{workout.name}})</h2>
+  {% for day, items in workout.days.items() %}
+    <h3>{{day}}</h3>
+    <ul>{% for ex in items %}<li>{{ex}}</li>{% endfor %}</ul>
+  {% endfor %}
+  <p><i>{{workout.notes}}</i></p>
+
+  <h2>Meal Plan</h2>
+  {% for m in mealplan.meals %}
+    <h3>{{m.meal}}</h3>
+    <ul>{% for s in m.suggestions %}<li>{{s}}</li>{% endfor %}</ul>
+  {% endfor %}
+
+  <h2>Motivational Quote</h2>
+  <blockquote>{{quote}}</blockquote>
+
+  <p><a href="/">⬅ Back</a></p>
+</body>
+</html>
