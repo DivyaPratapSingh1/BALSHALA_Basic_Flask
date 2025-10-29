@@ -143,7 +143,8 @@ elif page == "Generate Plan":
                 plan = {"generated_at": str(datetime.now()), "split":split, "workout":workout, "meals":meals, "calories":calories, "notes":notes}
                 st.session_state["profiles"][selected]["latest_plan"] = plan
                 st.success("Plan generated and saved in session.")
-                st.experimental_rerun()
+                st.rerun()
+
         with col2:
             st.subheader("Quick Preview")
             if "latest_plan" in profile:
@@ -180,7 +181,8 @@ elif page == "Progress Log":
                 st.session_state["logs"][selected] = logs
                 st.session_state["profiles"][selected]["weight"] = weight
                 st.success("Log saved in session.")
-                st.experimental_rerun()
+                st.rerun()
+
         with col2:
             st.subheader("Recent logs")
             if logs:
