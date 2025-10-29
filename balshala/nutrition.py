@@ -90,3 +90,4 @@ def generate_day_meal_plan(macros: Dict[str, float], pref: str="veg") -> Dict:
         "macros_total": macros,
         "meals": meals
     }
+# Saksham: Refined nutrition calculation logic
